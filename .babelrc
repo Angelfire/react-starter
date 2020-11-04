@@ -1,4 +1,10 @@
 {
-  "presets": ["env", "react"],
-  "plugins": ["transform-class-properties", "transform-regenerator"]
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "env": {
+    "development": {
+      "presets": [
+        ["@babel/preset-react", { "development": true }]
+      ]
+    }
+  }
 }
